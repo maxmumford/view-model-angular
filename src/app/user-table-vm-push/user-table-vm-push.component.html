@@ -1,0 +1,5 @@
+<table *ngIf="vm$ | async as vm">
+    <tr *ngFor="let user of vm.users">
+        <td>{{ getUserName(user) }}</td>
+    </tr>
+</table>
